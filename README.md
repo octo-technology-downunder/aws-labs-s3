@@ -59,3 +59,11 @@ Once awscli is installed and configured, let's run some commands against aws S3:
     At the same time, web console handles such kind of keys with `/` in it as hierarchy, making objects navigation more traditional
 
 # Managing permission
+By default all files and buckets are created with private access permissions. This can be changed via both console and cli.<br>
+### To change bucket's permissions via console: 
+* Goto AWS console, select S3 service
+* Navigate to `temp-foundation-labs-s3-<your_name>` bucket, then `Permissions` tab
+* In `Public access` section click on `Everyone` and tick `List objects` checkbox
+
+Now any AWS account has read access to this bucket.
+

@@ -8,16 +8,16 @@ In this lab we'll go though the following topics:
 - Static website in S3 bucket
 
 ## Accessing S3 via AWS Web Console
-1. Open https://console.aws.amazon.com/ and log in to your AWS account.
-![Login](images/s3-login.png "Login")
+1. Open https://console.aws.amazon.com/ and log in to your AWS account<br>
+![Login](images/s3-login.png "Login")<br>
 1. Select Services -> S3 in drop down menu or search for S3 in service finder 
 1. In opened page you'll see the list of buckets available in current AWS account
 
 AWS web console provide intuitive and straightforward controls, you can easily manage buckets and objects inside buckets, performing create/read/update/delete operations 
 
-NOTE that S3 is displayed as "global" service. 
-![Global](images/s3-global.png "Global")
-![No_region](images/s3-no_region.png "No_region")
+NOTE that S3 is displayed as "global" service<br>
+![Global](images/s3-global.png "Global")<br>
+![No_region](images/s3-no_region.png "No_region")<br>
 To be precise, that means following things:
 * Buckets are visible across all regions within AWS account
 * Bucket names are unique across all AWS accounts worldwide
@@ -70,8 +70,8 @@ By default all files and buckets are created with private access permissions. Th
 ### To change bucket's permissions via console: 
 * Goto AWS console, select S3 service
 * Navigate to `temp-foundation-labs-s3-<your_name>` bucket, then `Permissions` tab
-* In `Public access` section click on `Everyone` and tick `List objects` checkbox
-![Permissions](images/s3-permissions.png "Permissions")
+* In `Public access` section click on `Everyone` and tick `List objects` checkbox<br>
+![Permissions](images/s3-permissions.png "Permissions")<br>
 Now any AWS account has read access to this bucket.
 
 # Versioning
@@ -92,8 +92,8 @@ Now, let's see versioning working:
     `aws s3 cp test_file.txt s3://temp-foundation-labs-s3-<your_name>/prefix/test_file.txt`
 
 * In AWS console, go to your object in S3: `temp-foundation-labs-s3-<your_name>/prefix/test_file.txt`
-* Next to the file name you'll see a version name (will show `Latest version`) and dropdown contol, which allows to navigate through the  versions of the file
-![Versioning](images/s3-versioning.png "Versioning")
+* Next to the file name you'll see a version name (will show `Latest version`) and dropdown contol, which allows to navigate through the  versions of the file<br>
+![Versioning](images/s3-versioning.png "Versioning")<br>
 
 # Static website
 AWS S3 allows creating static websites off the bucket content. Let's create a simple page and host it on our S3 bucket.
@@ -110,8 +110,8 @@ AWS S3 allows creating static websites off the bucket content. Let's create a si
     `aws s3 cp index.html s3://temp-foundation-labs-s3-<your_name>`
 * In AWS console, navigate to `temp-foundation-labs-s3-<your_name>` bucket, then `Properties` tab
 * Click `Static website hosting` box, then `Use this bucket to host a website`
-* Type `index.html` in `Index document` field, then click `Save`
-![Website](images/s3-website.png "Website")
+* Type `index.html` in `Index document` field, then click `Save`<br>
+![Website](images/s3-website.png "Website")<br>
 
 Done! We just created a website! <br>
 To access our site click again on `Static website hosting`, then copy Endpoint URL. It should look like `http://temp-foundation-labs-s3-<your_name>.s3-website-ap-southeast-2.amazonaws.com`
@@ -122,8 +122,8 @@ Got an error? Something like `403 Forbidden` ??<br>
 Don't worry, that's because all files, uploaded to S3 are given private access permissions. And our `index.html` got the same as well<br>
 Just go to the AWS consoile and change `index.html` permissions to public read-only<br>
 Now try accessing a website endpoint once again<br>
-Success?? HOOORAAAAY!!!!
-![Hooray](images/s3-hooray.png "Hooray")
+Success?? HOOORAAAAY!!!!<br>
+![Hooray](images/s3-hooray.png "Hooray")<br>
 
 # Cleaning up the resources
 To clean up all created resources, simply remove the bucket:

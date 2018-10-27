@@ -4,7 +4,7 @@ In this lab we'll go though the following topics:
 - Working with AWS Simple Storage Service (S3) via AWS Console and aws cli
 - Creating/deleting buckets
 - Working with files in buckets
-- Managing Permissions, Versioning, Encryption
+- Managing Permissions, Versioning
 - Static website in S3 bucket
 
 ## Accessing S3 via AWS Web Console
@@ -122,7 +122,7 @@ Got an error? Something like `403 Forbidden` ??<br>
 Don't worry, that's because all files, uploaded to S3 are given private access permissions. And our `index.html` got the same as well<br>
 Just go to the AWS consoile and change `index.html` permissions to public read-only<br>
 Now try accessing a website endpoint once again<br>
-Success?? HOOORAAAAY!!!!<br>
+###Success?? HOOORAAAAY!!!!<br>
 ![Hooray](images/s3-hooray.png "Hooray")<br>
 
 # Cleaning up the resources

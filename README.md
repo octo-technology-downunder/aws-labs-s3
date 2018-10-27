@@ -17,7 +17,7 @@ AWS web console provide intuitive and straightforward controls, you can easily m
 
 NOTE that S3 is displayed as "global" service<br>
 ![Global](images/s3-global.png "Global")<br>
-![No_region](images/s3-no_region.png "No_region")<br>
+![No_region](images/s3-no_region2.png "No_region")<br>
 To be precise, that means following things:
 * Buckets are visible across all regions within AWS account
 * Bucket names are unique across all AWS accounts worldwide

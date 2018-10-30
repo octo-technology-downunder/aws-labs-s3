@@ -101,11 +101,11 @@ AWS S3 allows creating static websites off the bucket content. Let's create a si
 
     `touch index.html`<br>
     
-    `echo "\ `<br>
-    `<html>\ `<br>
-    `<head></head>\ `<br>
-    `<body><h2>Hello OCTO\!<br>This is my AWS S3 static website\!</body>\ `<br>
-    `</html>" > index.html`
+    `echo ' `<br>
+    `<html> `<br>
+    `<head></head> `<br>
+    `<body><h2>Hello OCTO!</h2><h3>This is my AWS S3 static website!</h3></body> `<br>
+    `</html>' > index.html`
     
     `aws s3 cp index.html s3://temp-foundation-labs-s3-<your_name>`
 * In AWS console, navigate to `temp-foundation-labs-s3-<your_name>` bucket, then `Properties` tab

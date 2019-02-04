@@ -6,6 +6,7 @@ In this lab we'll go though the following topics:
 - Working with files in buckets
 - Managing Permissions, Versioning
 - Static website in S3 bucket
+It might take you between 30 and 45 min to complete, enjoy ! 
 
 ## Accessing S3 via AWS Web Console
 1. Open https://console.aws.amazon.com/ and log in to your AWS account<br>
